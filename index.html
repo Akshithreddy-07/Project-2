@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeVault | Explore Your Favorites</title>
+    <link rel="stylesheet" href="animeweb.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Anime<span>Vault</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://myanimelist.net/topanime.php" target="_blank">Top Anime</a></li>
+            <li><a href="https://www.hianime.do" target="_blank">Watch Now</a></li>
+            <li><button id="theme-toggle">Switch to Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Discover Your Next Adventure</h1>
+        <p>Explore databases, trailers, and streaming platforms.</p>
+    </header>
+
+    <section class="container">
+        <div class="anime-grid">
+            
+            <div class="card">
+               <img src="poster/onepiece1.jpg" alt="Anime Poster">
+                <div class="card-content">
+                    <h3>One Piece</h3>
+                    <p>Driven by the dream of finding the "One Piece," Monkey D. Luffy leads the Straw Hat Pirates through a treacherous, world-spanning odyssey to challenge the oppressive World Government and claim the title of Pirate King.</p>
+                   <div class="btn-i" ><a href="https://hianime.do/watch/one-piece-100?ep=2142" target="_blank" class="btn">Watch Now</a>
+                    <a href="http://127.0.0.1:5500/project2/onepiece.html" target="_blank" class="btn">Know more</a>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="poster\naruto.jpg" alt="Anime Poster">
+                <div class="card-content">
+                    <h3>Naruto</h3>
+                    <p>An outcast boy with a powerful demon inside him fights to earn his village's respect and become their greatest leader.</p>
+                   <div class="btn-i" ><a href="https://hianime.do/watch/naruto-677?ep=12352" target="_blank" class="btn">Watch Now</a>
+                    <a href="http://127.0.0.1:5500/project2/naruto.html" target="_blank" class="btn">Know more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="poster/blackClover3.png" alt="Anime Poster">
+                <div class="card-content">
+                    <h3>Black Clover</h3>
+                    <p>Two students hide their true selves until they find comfort in each other.</p>
+                   <div class="btn-i" ><a href="https://hianime.do/watch/black-clover-2404?ep=27377" target="_blank" class="btn">Watch Now</a>
+                    <a href="http://127.0.0.1:5500/project2/blackclover.html" target="_blank" class="btn">Know more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2026 YOKANAKI!!. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+    class ThemeManager {
+  constructor(buttonId) {
+    this.button = document.getElementById(buttonId);
+    this.isDark = false; // Initial state
+
+    // Bind the click event
+    this.button.addEventListener('click', () => this.toggleTheme());
+  }
+
+  toggleTheme() {
+    // 1. Flip the state
+    this.isDark = !this.isDark;
+
+    // 2. Toggle the class on the body
+    document.body.classList.toggle('dark-theme');
+
+    // 3. Update the button text
+    this.updateUI();
+  }
+
+  updateUI() {
+    this.button.textContent = this.isDark 
+      ? "Switch to Light Mode" 
+      : "Switch to Dark Mode";
+  }
+}
+
+// Initialize the class when the script loads
+const myTheme = new ThemeManager('theme-toggle');
+</script>
+</body>
+
+</html>

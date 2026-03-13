@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece | King of the Pirates</title>
+    <style>
+        :root {
+            --op-gold: #fbc02d;
+            --op-blue: #003049;
+            --op-sand: #fdf0d5;
+            
+            --op-dark: #001a2c;
+        }
+
+        body {
+            font-family: 'Georgia', serif; /* Gives it a classic adventure/map feel */
+            background-color: var(--op-dark);
+            color: var(--op-sand);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://pub-1407f82391df4ab1951418d04be76914.r2.dev/uploads/e83bd65e-6db5-4b55-b47a-4c43f0fc5375.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 6px solid var(--op-red);
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            color: var(--op-gold);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            text-shadow: 4px 4px 0px var(--op-red);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: var(--op-blue);
+            padding: 35px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 2px solid var(--op-gold);
+            box-shadow: 10px 10px 0px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: var(--op-gold);
+            font-size: 2rem;
+            border-bottom: 2px dashed var(--op-gold);
+            padding-bottom: 10px;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: '⚓ ';
+            margin-right: 10px;
+        }
+
+        .manga-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 25px;
+            align-items: start;
+        }
+
+        .bounty-badge {
+            background: var(--op-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 1rem;
+            background: var(--op-blue);
+            color: var(--op-gold);
+            border-top: 3px solid var(--op-gold);
+        }
+        
+
+        
+        #red {
+    width: 100%;
+    max-width: 100%;      
+    height: auto;         
+    border-radius: 10px;  
+    border: 2px solid var(--op-gold); 
+    display: block;       
+    margin-top: 10px;
+}
+
+.yono {
+    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+        strong { color: var(--op-gold); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="bounty-badge"></div>
+        <h1></h1>
+        <p><i></i></p>
+    </header>
+
+    <div class="container">
+        
+        <section id="intro">
+            <h2>The Great Pirate Era</h2>
+            <p>
+                <strong>One Piece</strong> is a legendary adventure story following <strong>Monkey D. Luffy</strong>, 
+                a young man who gains the properties of rubber after unintentionally eating a Devil Fruit. 
+                With his diverse crew, the <strong>Straw Hat Pirates</strong>, Luffy explores the Grand Line in search 
+                of the world's ultimate treasure known as "One Piece."
+            </p>
+            <p>
+                Produced by Toei Animation, the anime has been airing since 1999 and has become a global phenomenon, 
+                breaking world records for its massive scale and intricate world-building.
+            </p>
+        </section>
+
+        <section id="story">
+            <h2>The Will of D</h2>
+            <p>
+                The narrative is an epic saga of freedom, friendship, and the fight against corruption. From the 
+                humble beginnings in the East Blue to the world-shaking battles against the Four Emperors (Yonko).
+            </p>
+            <ul>
+                <li><strong>The Dream:</strong> Every crew member has a unique goal, from finding the All Blue to becoming the World's Greatest Swordsman.</li>
+                <li><strong>The World:</strong> A vast ocean filled with mysterious islands, Sky Islands, and the underwater Fish-Man Island.</li>
+                <li><strong>The Conflict:</strong> The pirates face off against the World Government, the Marines, and rival pirate crews for the throne of the Pirate King.</li>
+            </ul>
+        </section>
+
+        <section id="manga">
+            <h2>The Masterpiece of Eiichiro Oda</h2>
+            <div class="manga-grid">
+                <div>
+                    <img src="poster\1237398.jpg" alt="One Piece Manga" style="width:100%; border-radius: 8px; border: 3px solid var(--op-gold);">
+                </div>
+                <div>
+                    <p>
+                        Written and illustrated by <strong>Eiichiro Oda</strong>, the manga began in <i>Weekly Shōnen Jump</i> 
+                        in July 1997. It is the best-selling manga series in history, with over 500 million copies in circulation worldwide.
+                    </p>
+                    <p>
+                        The manga is famous for its foreshadowing—details planted decades ago often return to play major roles 
+                        in the current plot. Oda's art style is uniquely expressive, blending cartoonish charm with high-stakes emotional drama.
+                    </p>
+                    <p><strong>Status:</strong> The Final Saga is currently underway.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Most Viewed And Listened</h2>
+            <div class="yono">
+                <div>
+                    <h3>Most Iconic Scene</h3>
+
+                </div>
+                <div>
+                    <h3>famous Lines</h3>
+                    <audio src="poster\Watch Anime Online for Free Full HD and 8 more pages - Personal 2 - Microsoft_ Edge 2026-03-13 00-00-59.wav" controls></audio>
+                </div>
+                <div>
+                    <h3>Most Iconic Scene</h3>
+                    <video src="poster/v1.mp4" controls id="red"></video>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 One Piece Fan Hub | To the ends of the Grand Line!
+    </footer>
+
+</body>
+</html>

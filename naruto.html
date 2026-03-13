@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto | Believe It!</title>
+    <style>
+        :root {
+            --naruto-orange: #ff6600;
+            --konoha-blue: #1b263b;
+            --scroll-tan: #f4e1c1;
+            --leaf-green: #4a7c59;
+            --shadow-black: #0d1b2a;
+        }
+
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: var(--shadow-black);
+            color: var(--scroll-tan);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            /* Replace the URL below with your Naruto banner */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://pub-1407f82391df4ab1951418d04be76914.r2.dev/uploads/12d3fcab-b8fd-49c8-ad41-170d6e3dd44a.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 5px solid var(--naruto-orange);
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: var(--naruto-orange);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 3px 3px 0px white, 6px 6px 0px var(--konoha-blue);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: var(--konoha-blue);
+            padding: 30px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            border-right: 8px solid var(--naruto-orange);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: var(--naruto-orange);
+            border-bottom: 2px solid var(--leaf-green);
+            padding-bottom: 5px;
+            margin-top: 0;
+            font-variant: small-caps;
+        }
+
+        .manga-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .rank-tag {
+            background: var(--leaf-green);
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 2px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #000;
+            color: var(--naruto-orange);
+            font-weight: bold;
+        }
+
+        strong { color: var(--naruto-orange); }
+    </style>
+</head>
+<body>
+
+    <header>
+        
+    </header>
+
+    <div class="container">
+        
+        <section id="intro">
+            <h2>The Tale of the Uzumaki Naruto</h2>
+            <p>
+                Twelve years before the start of the series, the <strong>Nine-Tailed Demon Fox</strong> attacked the Hidden Leaf Village. To save the people, the Fourth Hokage sealed the beast inside a newborn infant named <strong>Naruto Uzumaki</strong>.
+            </p>
+            <p>
+                Produced by Studio Pierrot, the anime is divided into two parts: <i>Naruto</i>, following his childhood adventures, and <i>Naruto: Shippuden</i>, covering his teenage years and his quest to save his friend Sasuke.
+            </p>
+        </section>
+
+        <section id="story">
+            <h2>The Path of the Ninja</h2>
+            <p>
+                Ostracized by his village, Naruto dreams of becoming the <strong>Hokage</strong>—the strongest ninja and leader of the village—to earn the respect of everyone who looked down on him.
+            </p>
+            <ul>
+                <li><strong>Team 7:</strong> Naruto joins Sasuke Uchiha and Sakura Haruno under the guidance of Kakashi Hatake.</li>
+                <li><strong>The Akatsuki:</strong> A rogue ninja organization seeks to capture all Tailed Beasts to rule the world.</li>
+                <li><strong>Ninjutsu:</strong> The series features complex battle systems involving Chakra, hand signs, and legendary techniques like the Rasengan.</li>
+            </ul>
+        </section>
+
+        <section id="manga">
+            <h2>Masashi Kishimoto's Legacy</h2>
+            <div class="manga-grid">
+                <div>
+                    <img src="poster\naruto-vol-1.jpg" alt="Naruto Manga Vol 1" style="width:100%; border: 2px solid white;">
+                </div>
+                <div>
+                    <p>
+                        Created by <strong>Masashi Kishimoto</strong>, the manga debuted in <i>Weekly Shōnen Jump</i> in 1999 and ran for 15 years. It is one of the "Big Three" shonen manga that defined a generation.
+                    </p>
+                    <p>
+                        The series is beloved for its deep character development, themes of loneliness and redemption, and some of the most iconic fight choreography in manga history.
+                    </p>
+                    <p><strong>Status:</strong> Completed (Followed by the sequel <i>Boruto</i>).</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Naruto Fan Scroll | Believe It!
+    </footer>
+
+</body>
+</html>
